@@ -46,6 +46,13 @@
 	});
 	tinymce.PluginManager.add('simplebadges', tinymce.plugins.simplebadges);
 	
+	function isPkgCorrectlyFormatted(pkg) {
+		var regx = /^[A-Za-z][A-Za-z0-9_]*\.[A-Za-z0-9_\.]+$/;
+		var matches = pkg.match(regx);
+		
+		return !(matches == null || !matches);
+	}
+	
 	function isSourcesIdCorrect(hosting, id) {
 		if(hosting === 'github' || hosting === 'bitbucket')  {
 			var regx = /^[A-Za-z0-9\.-_]*\/[A-Za-z0-9\.-_]*$/;
@@ -83,10 +90,23 @@
 		return false;
 	}
 	
+	function resetForm(table, options) {
+		//First, we reset source section
+		table.find('#simplebadges-sources-hosting').val('github');
+		table.find('#simplebadges-sources').val('');
+		
+		for (var index in options) {
+			table.find('#simplebadges-' + index).val(options[index]);
+		}
+		
+	}
+	
 	function buildShortcode(table, options) {
 		var toreturn = '[' + SHORTCODE;
 		
 		var sources_code = '';
+		var without_code = true;
+		var without_pkg = false;
 		
 		var sources_hosting = table.find('#simplebadges-sources-hosting').val();
 		var sources_repo = table.find('#simplebadges-sources').val();
@@ -94,6 +114,7 @@
 		if(isSourcesIdCorrect(sources_hosting, sources_repo)) {
 			sources_code += ' ' + sources_hosting + '="' + sources_repo + '"';
 			toreturn += sources_code;
+			without_code = false;
 		}
 		
 		for(var index in options) {
@@ -101,18 +122,22 @@
 				
 				if(!(index === 'calt')) {
 				
-					if((index === 'pkg') && (value === '')) {
+					if((index === 'pkg') && ((value === '') || !isPkgCorrectlyFormatted(value))) {
+						without_pkg = true;
 						continue;
 					} 
 					toreturn += ' ' + index + '="' + value + '"';
 				} else {
-					toreturn += ']' + value + '[/' + SHORTCODE +']';
+					var not_modified = (value === options['calt']);
+					toreturn += ']' + ((without_pkg || not_modified) ? '' : value) + '[/' + SHORTCODE +']';
+					var toreturn = { 'content' : toreturn, 'empty' : (without_pkg && without_code) };
 					return toreturn;
 				}
 			}
 		
 		//If we are here it means that 'calt' was not found! Let's build default configuration
-		var defconf = '[' + SHORTCODE + '][/' + SHORTCODE + ']';
+		var defconf = { 'content' : '', 'empty': true };
+		
 		return defconf;
 	}
 	
@@ -154,7 +179,7 @@
 				</select></td>\
 			<tr>\
 				<th><label for="simplebadges-calt"><strong>Badge custom alt:</strong></label></th>\
-				<td><input type="text" id="simplebadges-calt" name="calt" value="Get it on Google Play Store" /></td>\
+				<td><input type="text" id="simplebadges-calt" name="calt" value="Get it on Google Play Store!" /></td>\
 			</tr>\
 		</table><br/>\
 		<p class="submit">\
@@ -174,9 +199,13 @@
 				'calt'		: 'Get it on Google Play Store!',
 				};
 			var shortcode = buildShortcode(table, options);
-			tinyMCE.activeEditor.execCommand('mceInsertContent', 0, shortcode);
+			
+			if(!shortcode['empty']) {
+				tinyMCE.activeEditor.execCommand('mceInsertContent', 0, shortcode['content']);
+			} 
 			
 			tb_remove();
+			resetForm(table, options);
 		});
 	});
 })();
