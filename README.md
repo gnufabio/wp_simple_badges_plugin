@@ -1,4 +1,4 @@
-=== Simple Badges ===
+# Simple Badges #
 Plugin URI: http://www.gnufabio.tk/
 Contributors: gnufabio
 Donate link: http://goo.gl/XTpFwg
@@ -10,7 +10,7 @@ License: GPLv3
 
 Simply insert badges in your posts.
 
-== Description ==
+## Description ##
 With Simple Badges you can easily add badges in your post that link to:
 * Google Play Store
 * Github
@@ -19,10 +19,10 @@ With Simple Badges you can easily add badges in your post that link to:
 * Pastebin
 * Other links
 
-== Manual usage ==
+## Manual usage ##
 '[sbadge (pkg="{com.android.packagename}") (github="{username/repo}") (bitbucket="{username/repo}") (gist="{username/numericid{") (pastebin="{id}|{raw.php?i=ID}) (sources_url="http://{custom_url}") size={small|medium} align={center|left|right}](GooglePlay BadgeDescription)[/sbadge]'
 
-== License ==
+## License ##
 	Simple Badges Wordpress Plugin
     Copyright (C) 2013,  Fabio Bonassi<Gnufabio>
 
@@ -39,16 +39,16 @@ With Simple Badges you can easily add badges in your post that link to:
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	
-== Installation ==
+## Installation ##
 1. Download the latest zip file and extract the directory it contains.
 2. Upload the directory to your '/wp-content/plugins/' directory.
 3. Activate the plugin on the 'Plugins' menu in the WordPress Dashboard.
 
-== Screenshots ==
+## Screenshots ##
 1. TinyMCE plugin
 2. Output buttons
 
-== Changelog ==
-= 1.0 =
+## Changelog ##
+### 1.0 ###
 * First version.
 * Nothing has changed!
