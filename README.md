@@ -20,18 +20,18 @@ With Simple Badges you can easily add badges in your post that link to:
 * Other links
 
 ## Manual usage ##
-		[sbadge 
-		(pkg="{com.android.packagename}") 
-		(github="{username/repo}") 
-		(bitbucket="{username/repo}") 
-		(gist="{username/numericid{") 
-		(pastebin="{id}|{raw.php?i=ID}) 
-		(sources_url="http://{custom_url}") 
-		size={small|medium} 
-		align={center|left|right}
-		]
-		(GooglePlay BadgeDescription)
-		[/sbadge]
+	[sbadge 
+	(pkg="{com.android.packagename}") 
+	(github="{username/repo}") 
+	(bitbucket="{username/repo}") 
+	(gist="{username/numericid{") 
+	(pastebin="{id}|{raw.php?i=ID}) 
+	(sources_url="http://{custom_url}") 
+	size={small|medium} 
+	align={center|left|right}
+	]
+	(GooglePlay BadgeDescription)
+	[/sbadge]
 
 ## License ##
 	Simple Badges Wordpress Plugin
@@ -56,11 +56,11 @@ With Simple Badges you can easily add badges in your post that link to:
 3. Activate the plugin on the 'Plugins' menu in the WordPress Dashboard.
 
 ## Screenshots ##
-1. TinyMCE plugin
+* TinyMCE plugin
 
 ![screenshot-1]
 
-2. Output buttons
+* Output buttons
 
 ![screenshot-2]
 
