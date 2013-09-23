@@ -57,9 +57,14 @@ With Simple Badges you can easily add badges in your post that link to:
 
 ## Screenshots ##
 1. TinyMCE plugin
+[screenshot-1]
 2. Output buttons
+[screenshot-2]
 
 ## Changelog ##
 ### 1.0 ###
 * First version.
 * Nothing has changed!
+
+[screenshot-1]: https://github.com/gnufabio/wp_simple_badges_plugin/blob/master/screenshot-1.png
+[screenshot-2]: https://github.com/gnufabio/wp_simple_badges_plugin/blob/master/screenshot-1.png
