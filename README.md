@@ -20,7 +20,18 @@ With Simple Badges you can easily add badges in your post that link to:
 * Other links
 
 ## Manual usage ##
-`[sbadge (pkg="{com.android.packagename}") (github="{username/repo}") (bitbucket="{username/repo}") (gist="{username/numericid{") (pastebin="{id}|{raw.php?i=ID}) (sources_url="http://{custom_url}") size={small|medium} align={center|left|right}](GooglePlay BadgeDescription)[/sbadge]`
+`[sbadge 
+	(pkg="{com.android.packagename}") 
+	(github="{username/repo}") 
+	(bitbucket="{username/repo}") 
+	(gist="{username/numericid{") 
+	(pastebin="{id}|{raw.php?i=ID}) 
+	(sources_url="http://{custom_url}") 
+	size={small|medium} 
+	align={center|left|right}
+	]
+	(GooglePlay BadgeDescription)
+	[/sbadge]`
 
 ## License ##
 	Simple Badges Wordpress Plugin
