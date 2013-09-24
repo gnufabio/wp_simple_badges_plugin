@@ -5,7 +5,7 @@ Donate link: http://goo.gl/XTpFwg
 Tags: android,sources,post,link,badge
 Requires at least: 2.8
 Tested up to: 3.6.1
-Stable tag: 0.2
+Stable tag: 0.2.1
 License: GPLv3
 
 Simply insert badges in your posts.

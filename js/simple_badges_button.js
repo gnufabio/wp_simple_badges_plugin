@@ -4,7 +4,7 @@
 	var LONGNAME = 'Simple Badges';
 	var AUTHOR = 'GnuFabio';
 	var AUTHORURL = 'http://www.gnufabio.tk';
-	var VERSION = "0.2";
+	var VERSION = "0.2.1";
 	/* End of local constants */
 	
 	function getParentDir(url) {
