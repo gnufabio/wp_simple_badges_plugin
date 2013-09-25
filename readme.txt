@@ -19,7 +19,13 @@ With Simple Badges you can easily add badges in your post that link to:
 * Pastebin™
 * Other links
 
-NOTICE: Google Play Store™ and Android™ are trademarks of Google Inc. The Google Play Badge is reproduced from work created and shared by Google and used according to terms described in the License.
+NOTICE: 
+Google Play Store™ and Android™ are trademarks of Google Inc. 
+The Google Play Badge is reproduced from work created and shared by Google and used according to terms described in the License.
+The files:
+images/googleplay_big_badge.png
+images/googleplay_small_badge.png
+are porperty of Google Inc and are not licensed under GPLv3 license. For more information see [guidelines](http://developer.android.com/distribute/googleplay/promote/brand.html "Google Brand Guidelines").
 
 == Manual usage ==
 '[sbadge (pkg="{com.android.packagename}") (github="{username/repo}") (bitbucket="{username/repo}") (gist="{username/numericid{") (pastebin="{id}|{raw.php?i=ID}) (sources_url="http://{custom_url}") size={small|medium} align={center|left|right}](GooglePlay BadgeDescription)[/sbadge]'

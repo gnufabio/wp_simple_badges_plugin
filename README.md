@@ -19,7 +19,13 @@ With Simple Badges you can easily add badges in your post that link to:
 * Pastebin™
 * Other links
 
-NOTICE: Google Play Store™ and Android™ are trademarks of Google Inc. The Google Play Badge is reproduced from work created and shared by Google and used according to terms described in the License.
+NOTICE: 
+Google Play Store™ and Android™ are trademarks of Google Inc. 
+The Google Play Badge is reproduced from work created and shared by Google and used according to terms described in the License.
+The files:
+images/googleplay_big_badge.png
+images/googleplay_small_badge.png
+are porperty of Google Inc and are not licensed under GPLv3 license. For more information see [guidelines](Google Brand Guidelines).
 
 ## Manual usage ##
 	[sbadge 
@@ -69,3 +75,4 @@ NOTICE: Google Play Store™ and Android™ are trademarks of Google Inc. The Go
 
 [screenshot-1]: https://raw.github.com/gnufabio/wp_simple_badges_plugin/master/screenshot-1.png
 [screenshot-2]: https://raw.github.com/gnufabio/wp_simple_badges_plugin/master/screenshot-2.png
+[guidelines]: http://developer.android.com/distribute/googleplay/promote/brand.html
