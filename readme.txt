@@ -12,12 +12,14 @@ Simply insert badges in your posts.
 
 == Description ==
 With Simple Badges you can easily add badges in your post that link to:
-* Google Play Store
-* Github
-* Bitbucket
-* Gist
-* Pastebin
+* Google Play Store™
+* Github™
+* Bitbucket™
+* Gist™
+* Pastebin™
 * Other links
+
+NOTICE: Google Play Store™ and Android™ are trademarks of Google Inc. The Google Play Badge is reproduced from work created and shared by Google and used according to terms described in the License.
 
 == Manual usage ==
 '[sbadge (pkg="{com.android.packagename}") (github="{username/repo}") (bitbucket="{username/repo}") (gist="{username/numericid{") (pastebin="{id}|{raw.php?i=ID}) (sources_url="http://{custom_url}") size={small|medium} align={center|left|right}](GooglePlay BadgeDescription)[/sbadge]'
@@ -49,6 +51,5 @@ With Simple Badges you can easily add badges in your post that link to:
 2. Output buttons
 
 == Changelog ==
-= 1.0 =
-* First version.
-* Nothing has changed!
+= 0.2.2 =
+* First public version.

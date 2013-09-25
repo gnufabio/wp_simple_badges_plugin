@@ -12,12 +12,14 @@ Simply insert badges in your posts.
 
 ## Description ##
 With Simple Badges you can easily add badges in your post that link to:
-* Google Play Store
-* Github
-* Bitbucket
-* Gist
-* Pastebin
+* Google Play Store™
+* Github™
+* Bitbucket™
+* Gist™
+* Pastebin™
 * Other links
+
+NOTICE: Google Play Store™ and Android™ are trademarks of Google Inc. The Google Play Badge is reproduced from work created and shared by Google and used according to terms described in the License.
 
 ## Manual usage ##
 	[sbadge 
@@ -64,10 +66,6 @@ With Simple Badges you can easily add badges in your post that link to:
 
 ![screenshot-2]
 
-## Changelog ##
-### 1.0 ###
-* First version.
-* Nothing has changed!
 
 [screenshot-1]: https://raw.github.com/gnufabio/wp_simple_badges_plugin/master/screenshot-1.png
 [screenshot-2]: https://raw.github.com/gnufabio/wp_simple_badges_plugin/master/screenshot-2.png

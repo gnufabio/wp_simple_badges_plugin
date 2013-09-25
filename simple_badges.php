@@ -27,7 +27,6 @@ License: GPLv3
 		$size = $attrs['size'];
 		$align = $attrs['align'];
 		
-		$img_url = 'https://developer.android.com/images/brand/en_generic_rgb_wo_60.png';
 		$img_alt = 'Get it on Google Play';
 		
 		//Check if align is given, and if is valid! 'center' is default.
@@ -46,11 +45,13 @@ License: GPLv3
 			}
 		}
 		
+		$img_url = plugins_url( 'images/googleplay_big_badge.png', __FILE__ );
+		
 		//Check if 'size' attribute is given
 		if(!(is_null($size) || empty($size))) {
 			if(strcmp($size, 'small') == 0) {
-				$img_url = 'https://developer.android.com/images/brand/en_generic_rgb_wo_45.png';
-			}
+				$img_url = plugins_url( 'images/googleplay_small_badge.png', __FILE__ );;
+			}	
 		}
 		
 		if(!is_null($content) && !empty($content)) {

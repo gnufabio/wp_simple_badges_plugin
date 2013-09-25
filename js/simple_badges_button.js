@@ -126,6 +126,11 @@
 						without_pkg = true;
 						continue;
 					} 
+					
+					var default_value = options[index];
+					if(value === default_value) {
+						continue;
+					}
 					toreturn += ' ' + index + '="' + value + '"';
 				} else {
 					var not_modified = (value === options['calt']);
