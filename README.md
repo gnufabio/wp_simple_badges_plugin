@@ -1,12 +1,12 @@
 # Simple Badges #
-Plugin URI: http://www.gnufabio.tk/
-Contributors: gnufabio
-Donate link: http://goo.gl/XTpFwg
-Tags: android,sources,post,link,badge
-Requires at least: 2.8
-Tested up to: 3.6.1
-Stable tag: 0.2.1
-License: GPLv3
+**Plugin URI**: http://www.gnufabio.tk/  
+**Contributors**: gnufabio  
+**Donate link**: http://goo.gl/XTpFwg  
+**Tags**: android,sources,post,link,badge  
+**Requires at least**: 2.8  
+**Tested up to**: 3.6.1  
+**Stable tag**: 0.2.1  
+**License**: GPLv3  
 
 Simply insert badges in your posts.
 
@@ -22,10 +22,14 @@ With Simple Badges you can easily add badges in your post that link to:
 NOTICE: 
 Google Play Store™ and Android™ are trademarks of Google Inc. 
 The Google Play Badge is reproduced from work created and shared by Google and used according to terms described in the License.
+
 The files:
-images/googleplay_big_badge.png
-images/googleplay_small_badge.png
-are porperty of Google Inc and are not licensed under GPLv3 license. For more information see [guidelines](Google Brand Guidelines).
+
+* images/googleplay_big_badge.png
+
+* images/googleplay_small_badge.png
+
+are porperty of Google Inc and are not licensed under GPLv3 license. For more information see [guidelines].
 
 ## Manual usage ##
 	[sbadge 
